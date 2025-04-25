@@ -22,7 +22,6 @@ pub const INSET_VECTOR: Vector = Vector {
     y: EDITOR_INSET[1],
 };
 
-pub mod editor;
 pub mod update;
 
 pub use iced::advanced::text::Span;
