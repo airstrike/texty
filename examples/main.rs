@@ -49,8 +49,11 @@ impl Texty {
     fn update(&mut self, message: Message) {
         match message {
             Message::Action(action) => {
+                let is_edit = action.is_edit();
                 self.value.perform(action);
-                self.spans = vec![span(self.value.text())];
+                if is_edit {
+                    self.spans = vec![span(self.value.text())];
+                }
             }
             Message::Clear => {
                 self.value = textbox::Content::default();
