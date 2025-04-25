@@ -1,0 +1,20 @@
+[package]
+name = "texty"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+log = "0.4.27"
+
+iced = { git = "https://github.com/iced-rs/iced.git", branch = "master", features = [
+    "advanced",
+    "canvas",
+    "debug",
+    "web-colors",
+    "wgpu",
+] }
+iced_core = { git = "https://github.com/iced-rs/iced.git", branch = "master" }
+iced_graphics = { git = "https://github.com/iced-rs/iced.git", branch = "master", features = [
+    "geometry",
+] }
+iced_widget = { git = "https://github.com/iced-rs/iced.git", branch = "master" }
