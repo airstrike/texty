@@ -1180,7 +1180,6 @@ pub fn draw_text<Renderer>(
         alignment::Vertical::Bottom => bounds.y + bounds.height,
     };
 
-    // TODO: try style color first before default?
     renderer.fill_paragraph(
         paragraph,
         Point::new(x, y),
